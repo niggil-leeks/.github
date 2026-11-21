@@ -1,9 +1,8 @@
-# OPSEC LEVEL:
-# GETPROP
+# OPSEC LEVEL: GETPROP
 
 ## COMO FUNCIONA O SISTEMA DE LICENÇA DO SUNSHINE (`SerialAccess`)
 
-O app possui proteção DRM/whitelist atrelada ao hardware:
+O app possui proteção "DRM"/whitelist atrelada ao hardware:
 
 1. Leitura do Serial: Executa via root getprop ro.serialno (ou ro.boot.serialno).
 2. Normalização: Converte para maiúsculas e valida via regex [A-Z0-9]{6,64}.
@@ -16,7 +15,7 @@ O app possui proteção DRM/whitelist atrelada ao hardware:
 
 ## HOW THE SUNSHINE LICENSE SYSTEM (`SerialAccess`) WORKS
 
-The app uses hardware-bound DRM/whitelist protection:
+The app uses hardware-bound "DRM"/whitelist protection:
 
 1. Serial Number Retrieval: Executes `getprop ro.serialno` (or `ro.boot.serialno`) with root privileges.
 2. Normalization: Converts the serial number to uppercase and validates it using the regex pattern `[A-Z0-9]{6,64}`.
